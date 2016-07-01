@@ -17,13 +17,21 @@ app.config(function($routeProvider){
 });
 
 app.controller('galleryCtrl', function($scope){
-	var pics = {};
-	pics.push({"title": "tubbs",
-					"src": "http://vignette1.wikia.nocookie.net/nekoatsume/images/a/a2/Album_Tubbs.png/revision/latest?cb=20151111142920"})
+	var pics = [];
+
+	var allPics = {}
+
+	for (var i = 0; i < 5; ++i){
+	pics.push({"title": "elephant",
+			"src": "http://pre06.deviantart.net/2fc0/th/pre/i/2015/187/f/0/rescue_by_lilisys-d908s3o.png"});
+		pics.push({"title": "umbrella",
+			"src": "http://img11.deviantart.net/3813/i/2013/020/7/9/umbrella_by_lilisys-d5s6z97.jpg"});
+	}
+
 	$scope.artwork = pics;
 	$scope.print = 'JUST LET HIM EAT';
 
-	$scope.expand = function()){
+	$scope.expand = function(){
 		console.log("expand!!!");
 	};
 

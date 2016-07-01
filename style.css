@@ -1,39 +1,16 @@
-.bigBox{
-	margin-bottom:5%;
-	margin-top:10%;
-	width:75%;
-	margin-left: 12%;
-	margin-right: 12%;
-}
-
-.row{
-	width: 100%;
-	padding:0px;
-	clear:left;
-}
-
-.imgSquare{
-	float: left;
-	width: 30%;
-}
-
-div img{
-	width: 100%;
-	display:block;
-	margin:0 auto;
-	border-style: solid;
-	border-color: #238ca4
-}
-
-
-h1, h2{
-	color:#33c9eb;
+*{
+	box-sizing: border-box;
 }
 
 body{
 	font-family:Century Gothic, sans-serif;
 	margin: 0;
 	padding: 0;
+
+}
+
+h1, h2{
+	color:#33c9eb;
 }
 
 .header{
@@ -107,16 +84,17 @@ footer{
 
 /*PINTEREST STYLE*/
 #wrapper {
+	margin-top: 10%;
 }
 
 #columns {
-	-webkit-column-count: 3;
+/*	-webkit-column-count: 4;
 	-webkit-column-gap: 10px;
 	-webkit-column-fill: auto;
-	-moz-column-count: 3;
+	-moz-column-count: 4;
 	-moz-column-gap: 10px;
-	-moz-column-fill: auto;
-	column-count: 3;
+	-moz-column-fill: auto*/;
+	column-count: 4;
 	column-gap: 15px;
 	column-fill: auto;
 }
@@ -129,30 +107,32 @@ footer{
 	margin: 0 2px 15px;
 	-webkit-column-break-inside: avoid;
 	-moz-column-break-inside: avoid;
-	column-break-inside: avoid;
-	padding: 15px;
+	column-break-inside: avoid;*/
+	
 	padding-bottom: 5px;
-	background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+	/*background: -webkit-linear-gradient(45deg, #222, #F9F9F9);*/
 	opacity: 1;
+	
 	
 	-webkit-transition: all .2s ease;
 	-moz-transition: all .2s ease;
 	-o-transition: all .2s ease;
-	transition: all .2s ease;*/
+	transition: all .2s ease;
 }
 
 .pin img {
 	width: 100%;
-	border-bottom: 1px solid #ccc;
-	padding-bottom: 15px;
 	margin-bottom: 5px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: #eaf9fd;
 }
 
-.pin p {
+/*.pin p {
 	font: 12px/18px Arial, sans-serif;
 	color: #333;
 	margin: 0;
-}
+}*/
 
 @media (min-width: 960px) {
 	#columns {
@@ -164,12 +144,31 @@ footer{
 
 @media (min-width: 1100px) {
 	#columns {
-		-webkit-column-count: 5;
+		-webkit-column-count: 4;
 		-moz-column-count: 4;
 		column-count: 4;
 	}
 }
 
-#columns:hover .pin:not(:hover) {
+/*#columns:hover .pin:not(:hover) {
 	opacity: 0.4;
+}*/
+
+.pin img:hover{
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(51, 201,	235, 0.7);
+	-moz-box-shadow:    0px 0px 30px 0px rgba(51, 201,	235, 0.7);
+	box-shadow:         0px 0px 30px 0px rgba(51, 201,	235, 0.7);
+	border-color: rgba(51, 201,	235, 0.7);
+	opacity: 0.8;
+}
+
+
+/* LANDING PAGE */
+#bg-img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -75px;
+
+margin-left: -150px;
 }
