@@ -164,11 +164,20 @@ footer{
 
 
 /* LANDING PAGE */
+.landing{
+	 background: url(http://tinyurl.com/h2539js) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #bg-img{
-	position: absolute;
-	top: 50%;
+	background-position: center;
+	background-attachment: fixed;
+/*	top: 50%;
 	left: 50%;
 	margin-top: -75px;
 
 margin-left: -150px;
-}
+}*/
