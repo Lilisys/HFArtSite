@@ -1,10 +1,23 @@
-
+<div class="header">
+<a class="white" ui-sref="landing">Landing</a>
+<a class="white" ui-sref="gallery">Gallery</a>
+</div>
+		<!-- The Modal Window -->
+		<div id="myModal" class="modal">
+		  <!-- Modal content -->
+		  <div class="modal-content clearfix">
+		    <span class="close" ng-click="clickX()">x</span>
+		    <div class="modal-img"></div>
+		    <p align="center" id="modal-text"></p>
+		  </div>
+		</div>
+		
 		<div id="wrapper">
 		<div id="columns">
 
-			<!-- <div class="instantiate pin" ng-click="expand()" ng-repeat="pic in artwork track by $index">
+			<div class="instantiate pin" ng-click="modalOpen(pic.src)" ng-repeat="pic in artwork track by $index">
 				<img src="{{pic.src}}" />
-			</div> -->
+			</div>
 		
 		</div>
 	</div>
